@@ -1,0 +1,3 @@
+Text generation is the task of generating text with the goal of appearing indistinguishable to human-written text. This task if more formally known as "natural language generation" in the literature.
+
+Text generation can be addressed with Markov processes or deep generative models like LSTMs. Recently, some of the most advanced methods for text generation include BART, GPT and other GAN-based approaches. Text generation systems are evaluated either through human ratings or automatic evaluation metrics like METEOR, ROUGE, and BLEU.
