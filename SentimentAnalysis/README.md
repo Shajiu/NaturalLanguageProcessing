@@ -1,0 +1,5 @@
+Sentiment analysis is the task of classifying the polarity of a given text. For instance, a text-based tweet can be categorized into either "positive", "negative", or "neutral". Given the text and accompanying labels, a model can be trained to predict the correct sentiment.
+
+Sentiment analysis techniques can be categorized into machine learning approaches, lexicon-based approaches, and even hybrid methods. Some subcategories of research in sentiment analysis include: multimodal sentiment analysis, aspect-based sentiment analysis, fine-grained opinion analysis, language specific sentiment analysis.
+
+More recently, deep learning techniques, such as RoBERTa and T5, are used to train high-performing sentiment classifiers that are evaluated using metrics like F1, recall, and precision. To evaluate sentiment analysis systems, benchmark datasets like SST, GLUE, and IMDB movie reviews are used.
