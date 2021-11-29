@@ -1,4 +1,5 @@
-## 本仓库存储了一些基本的NMT相关的项目代码
-### 一、[BPE:](https://github.com/Shajiu/NLP_Machine-Translation/tree/master/BPE)将把BPE原始码很好的简化和浓缩，可便于入门者理解和使用。
-### 二、[Attention_visualization:](https://github.com/Shajiu/NLP_Machine-Translation/tree/master/Attention_visualization)对译文质量进行Attention可视化以及BLEU值的折线图。
-### 三、[Pre-processing-tools:](https://github.com/Shajiu/NLP_Machine-Translation/tree/master/Pre-processing-tools)NMT中预处理时所使用的一些工具。
+Machine translation is the task of translating a sentence in a source language to a different target language.
+
+Approaches for machine translation can range from rule-based to statistical to neural-based. More recently, encoder-decoder attention-based architectures like BERT have attained major improvements in machine translation.
+
+One of the most popular datasets used to benchmark machine translation systems is the WMT family of datasets. Some of the most commonly used evaluation metrics for machine translation systems include BLUE, METEOR, NIST, and others.
