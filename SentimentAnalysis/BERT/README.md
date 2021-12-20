@@ -125,7 +125,55 @@ processors = {
   }
   ```
 其中```emotion```为执行脚本时传入的参数，类似于任务名称；```EmotionProcessor```为以上添加的读取自定义数据的类名。接下来即可执行。执行分别为微调和验证，可以修改以上```run_train.sh和run_test.sh```中的输入/输出路径即可。
-##### 5、获取实例源码
-以上实例的所有源码以及数据可以在[这里](https://github.com/Shajiu/NaturalLanguageProcessing/tree/master/SentimentAnalysis/BERT)获取，其中获取中文预训练模型，请[点击](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)这里。
+##### 5、获取实例源码以及模型
+
+以上实例的所有源码以及数据可以在[这里](https://github.com/Shajiu/NaturalLanguageProcessing/tree/master/SentimentAnalysis/BERT)获取，其中BERT相关模型从按照如下方式获取，具体有如下版本:
+
+- [BERT-Large, Uncased (Whole Word Masking)](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2019_05_30/wwm_uncased_L-24_H-1024_A-16.zip)
+语言种类：英文
+网络结构：24-layer, 1024-hidden, 16-heads
+参数规模：340M
+
+- [BERT-Large, Cased (Whole Word Masking)](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2019_05_30/wwm_cased_L-24_H-1024_A-16.zip)
+语言种类：英文
+网络结构：24-layer, 1024-hidden, 16-heads
+参数规模：340M
+
+- [BERT-Base, Uncased](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip)
+语言种类：英文
+网络结构：12-layer, 768-hidden, 12-heads
+参数规模：110M
+
+- [BERT-Large, Uncased](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_10_18/uncased_L-24_H-1024_A-16.zip)
+语言种类：英文
+网络结构：24-layer, 1024-hidden, 16-heads
+参数规模：340M
+
+- [BERT-Base, Cased](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip)
+语言种类：英文
+网络结构：12-layer, 768-hidden, 12-heads
+参数规模：110M
+
+- [BERT-Large, Cased](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_10_18/cased_L-24_H-1024_A-16.zip)
+语言种类：英文
+网络结构：24-layer, 1024-hidden, 16-heads
+参数规模：340M
+
+- [BERT-Base, Multilingual Cased (New, recommended)](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip)
+语言种类：104 种语言
+网络结构：12-layer, 768-hidden, 12-heads
+参数规模：110M
+
+- [BERT-Base, Multilingual Uncased (Orig, not recommended)](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_11_03/multilingual_L-12_H-768_A-12.zip)
+语言种类：102 种语言
+网络结构：12-layer, 768-hidden, 12-heads
+参数规模：110M
+
+- [BERT-Base, Chinese](https://link.zhihu.com/?target=https%3A//storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)
+语言种类：中文
+网络结构：12-layer, 768-hidden, 12-heads
+参数规模：110M
+
+从上面的版本可以看出，语言主要分为三种：中文、英文和多语言。其中英文和多语言版本还区分：cased 和 uncased，cased 表示区分大小写，uncased 表示不区分大小写。网络结构主要分为两种：Base 和 Large。Base版本相比于Large版本网络规模较小，参数量为110M。中文的预训练模型只有一个版本，是用Base版本的网络结构训练得到。
 ##### 6、总结
 本文对BERT做了一些简单的Demo展示, 首先，介绍了BERT中的两个重要任务，分别为Masked LM和Next Sentence Prediction；其次，介绍了如何下载源码/预训练模型并介绍基本的配置环境需求；然后，通过官网说明下载MRPC语料并进行了微调和预测；最后，以情感分析的数据实例进行了详细的自定义数据微调和预测的使用说明。希望通过简要介绍能为一些类似本人的小白起到学习的作用。
