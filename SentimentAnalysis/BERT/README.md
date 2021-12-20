@@ -126,6 +126,6 @@ processors = {
   ```
 其中```emotion```为执行脚本时传入的参数，类似于任务名称；```EmotionProcessor```为以上添加的读取自定义数据的类名。接下来即可执行。执行分别为微调和验证，可以修改以上```run_train.sh和run_test.sh```中的输入/输出路径即可。
 ##### 5、获取实例源码
-以上实例的所有源码以及数据可以在[这里](https://github.com/Shajiu/NaturalLanguageProcessing/tree/master/SentimentAnalysis/BERT)获取。
+以上实例的所有源码以及数据可以在[这里](https://github.com/Shajiu/NaturalLanguageProcessing/tree/master/SentimentAnalysis/BERT)获取，其中获取中文预训练模型，请[点击](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip)这里。
 ##### 6、总结
 本文对BERT做了一些简单的Demo展示, 首先，介绍了BERT中的两个重要任务，分别为Masked LM和Next Sentence Prediction；其次，介绍了如何下载源码/预训练模型并介绍基本的配置环境需求；然后，通过官网说明下载MRPC语料并进行了微调和预测；最后，以情感分析的数据实例进行了详细的自定义数据微调和预测的使用说明。希望通过简要介绍能为一些类似本人的小白起到学习的作用。
