@@ -1,4 +1,4 @@
-# TibetanSentiment
+# TibetanCLS
 文本分类(Text Classification或Text Categorization，TC)，或者称为自动文本分类(Automatic Text Categorization)，是指计算机将载有信息的一篇文本映射到预先给定的某一类别或某几类别主题的过程。文本分类另外也属于自然语言处理领域。
 本文构建了基于藏语的文本分类任务数据集，类别有{'金融', '故事', '文学', '军事', '游戏', '教育', '世界', '体育', '房产', '娱乐', '农业', '汽车', '科技', '旅游'}
 
