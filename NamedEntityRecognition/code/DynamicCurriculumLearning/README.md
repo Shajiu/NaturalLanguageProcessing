@@ -109,7 +109,7 @@ Before selection:426    Training data size:2131
 ```
 ### 4、推理说明
 ##### 4.1 推理默认加载test数据进行推理，输出为
-```{"text": ["骨", "水", "泥"], "type": "植入物"}, {"text": ["骨", "水", "泥"], "type": "植入物"}, {"text": ["骨", "水", "泥"], "type": "植入物"}```
+```{"text": ["Muscle", "Pain", "."], "type": "ADR"}```
 ##### 4.2 具体推理命令为：```python test.py --config ./config/example.json
 
 ##### 4.3 若想修改另外文件进行推理或者修改输出文件格式，请在```test```文件中的```predict```函数中进行修改即可。
