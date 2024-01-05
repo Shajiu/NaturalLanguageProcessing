@@ -12,4 +12,7 @@
 ## Demo界面展示
 <img width="1920" alt="5a7b8d74af280d0f1175fe7cadbde21" src="https://github.com/Shajiu/NaturalLanguageProcessing/assets/31726161/caa8eb4a-b3e9-4035-a438-7360ae95c959">
 
-
+## 使用方法
+``` python
+python tokennizer_web.py      # 修改分词参数文件路径
+```
